@@ -8,7 +8,7 @@ app.get("/api/v1/users/:id", async (req, res) => {
   res.json({ id: "1", name: "foobar" });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("users");
   console.log("--------------------------");
 });
